@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:fab="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/mainview"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    app:behavior_peekHeight="70dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+
+    <FrameLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gmail_fab"
+            app:backgroundTint="@color/black"
+            android:layout_gravity="end"
+            android:visibility="visible"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:clickable="true"
+            android:src="@drawable/arrow_up" />
+
+<LinearLayout
+
+    android:layout_marginTop="10dp"
+    android:background="@drawable/rectangle"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/firstview"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/setup_name"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="Sinester Plant 2"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:text="Wallpaper:  "/>
+        <TextView
+            android:layout_weight="2"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/wallname"
+            android:text="Sinester Plant 2"/>
+        <android.support.v7.widget.CardView
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            android:id="@+id/downloadwall"
+            android:layout_marginBottom="3dp"
+            android:layout_width="90dp"
+            android:layout_height="25dp">
+            <LinearLayout
+                android:padding="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textSize="14dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Download" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:text="Icons:  "/>
+        <TextView
+            android:layout_weight="2"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/icname"
+            android:text="Bixpic"/>
+        <android.support.v7.widget.CardView
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            android:id="@+id/downloadic"
+            android:layout_marginBottom="3dp"
+            android:layout_width="90dp"
+            android:layout_height="25dp">
+            <LinearLayout
+                android:padding="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textSize="14dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Download" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:text="Widget:  "/>
+        <TextView
+            android:layout_weight="2"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/widgetname"
+            android:text="Zooper"/>
+        <android.support.v7.widget.CardView
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            android:id="@+id/downloadwidget"
+            android:layout_marginBottom="3dp"
+            android:layout_width="90dp"
+            android:layout_height="25dp">
+            <LinearLayout
+                android:padding="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textSize="14dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Download" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:text="Launcher:  "/>
+        <TextView
+            android:layout_weight="2"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/launchername"
+            android:text="Nova"/>
+        <android.support.v7.widget.CardView
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            android:id="@+id/downloadlauncher"
+            android:layout_marginBottom="3dp"
+            android:layout_width="90dp"
+            android:layout_height="25dp">
+            <LinearLayout
+                android:padding="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textSize="14dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Download" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/placeholder_grey" />
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            android:id="@+id/downloadbackup"
+            android:layout_marginBottom="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp">
+            <LinearLayout
+                android:padding="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textSize="14dp"
+                    android:paddingRight="4dp"
+                    android:paddingLeft="4dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Download Backup" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <TextView
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Note"
+            android:id="@+id/note"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_user_black"/>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tusharrk"
+            android:id="@+id/username"
+            android:textSize="16dp"/>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+    </FrameLayout>
+
+</android.support.v4.widget.NestedScrollView>

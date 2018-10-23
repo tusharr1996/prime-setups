@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/dark"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <FrameLayout
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/backbutton"
+                android:layout_gravity="start"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow_back_white"/>
+            <ImageView
+                android:layout_gravity="right"
+                android:id="@+id/favourite"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/heart_white"/>
+        </FrameLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/coordinator"
+        android:background="@color/dark">
+
+
+<ImageView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fullimage"
+    android:layout_marginBottom="70dp"
+    android:src="@drawable/demo"/>
+
+    <include layout="@layout/bottomsheet"
+        android:id="@+id/bottom_sheet"/>
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

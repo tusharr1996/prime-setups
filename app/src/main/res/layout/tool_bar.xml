@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@null"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    android:elevation="4dp">
+
+    <com.mancj.materialsearchbar.MaterialSearchBar
+        style="@style/MaterialSearchBarLight"
+        app:mt_speechMode="true"
+        app:mt_hint="Enter Theme Name, Themer Name."
+        app:mt_maxSuggestionsCount="10"
+app:mt_navIconEnabled="true"
+        app:mt_placeholder="OsmApps"
+        android:padding="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/searchBar" />
+    </android.support.v7.widget.Toolbar>
+
